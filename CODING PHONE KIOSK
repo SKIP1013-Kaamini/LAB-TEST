@@ -1,0 +1,38 @@
+package ex1;
+import java.util.Scanner;
+class PHONE_KIOSK {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double sales;
+		double hours;
+		double commission = 0;
+		double dailywages;
+		double allwages;
+	
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter sales");
+		sales = scan.nextDouble();
+		System.out.println("Enter hours worked");
+		hours = scan.nextDouble();
+		
+		if (sales>500)
+			commission= 0.15*sales;
+		else if ( (sales >= 301.00) && (sales <= 500))
+	    commission = 0.1*sales;
+		else if ((sales >= 150) && (sales <= 300) )
+			commission = 0.05*sales;
+		
+		dailywages = hours*5;
+		allwages = dailywages + commission;
+		
+		System.out.printf (" Commission : RM%.2f" , commission);
+		System.out.printf("\nDaily Wages : RM%.2f" , allwages);
+				
+
+
+	}
+
+}
