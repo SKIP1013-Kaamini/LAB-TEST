@@ -1,0 +1,43 @@
+int num;
+		double item1;
+		double item2;
+		double item3;
+		double price1;
+		double price2;
+		double price3;
+		double total;
+		double discount;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the number of items : ");
+		num = scan.nextInt();
+		System.out.println("Enter price of first item : ");
+		price1 = scan.nextInt();
+		System.out.println("Enter quantity of first item : ");
+		item1 = scan.nextInt();
+		System.out.println(" ");
+		System.out.println("Enter price of second item : ");
+		price2 = scan.nextInt();
+		System.out.println("Enter quantity of second item : ");
+		item2 = scan.nextInt();
+		System.out.println(" ");
+		System.out.println("Enter price of third item : ");
+		price3 = scan.nextInt();
+		System.out.println("Enter quantity of third item : ");
+		item3 = scan.nextInt();
+		System.out.println(" ");
+		total = (price1*item1)+(price2*item2)+(price3*item3);//total amount
+		System.out.printf("Total amount : RM%.2f" , total); 
+		if (total >=100)
+			discount = total*0.2;
+		else
+			discount = total*0.1;
+		System.out.printf("\nDiscount Received : RM%.2f", discount);
+		System.out.printf("\nPrice to be paid : RM%.2f" ,(total-discount));
+		
+				
+		
+
+	}
+
+}
