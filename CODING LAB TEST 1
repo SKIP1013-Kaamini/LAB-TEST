@@ -1,4 +1,12 @@
-int num;
+package ex1;
+import java.util.Scanner;
+class C_MARTS {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int num;
 		double item1;
 		double item2;
 		double item3;
@@ -12,19 +20,19 @@ int num;
 		System.out.println("Enter the number of items : ");
 		num = scan.nextInt();
 		System.out.println("Enter price of first item : ");
-		price1 = scan.nextInt();
+		price1 = scan.nextDouble();
 		System.out.println("Enter quantity of first item : ");
-		item1 = scan.nextInt();
+		item1 = scan.nextDouble();
 		System.out.println(" ");
 		System.out.println("Enter price of second item : ");
-		price2 = scan.nextInt();
+		price2 = scan.nextDouble();
 		System.out.println("Enter quantity of second item : ");
-		item2 = scan.nextInt();
+		item2 = scan.nextDouble();
 		System.out.println(" ");
 		System.out.println("Enter price of third item : ");
-		price3 = scan.nextInt();
+		price3 = scan.nextDouble();
 		System.out.println("Enter quantity of third item : ");
-		item3 = scan.nextInt();
+		item3 = scan.nextDouble();
 		System.out.println(" ");
 		total = (price1*item1)+(price2*item2)+(price3*item3);//total amount
 		System.out.printf("Total amount : RM%.2f" , total); 
@@ -41,3 +49,4 @@ int num;
 	}
 
 }
+
