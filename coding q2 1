@@ -19,10 +19,16 @@ class Quiz2_Q1 {
 		System.out.println("Name : " +name);
 		System.out.println("Number of classes held:" +numclass);
 		System.out.println("Number of classes attend:" +numattend);
-		percentage = (numattend/numclass)/100;
-		System.out.println("Percentage of attendance: " + percentage);
+		percentage = (numattend/numclass)*100;
+		System.out.printf("Percentage of attendance: %.2f" ,percentage);
 		if (percentage <= 74)
-			System.out.println("You are not allowed to sit for exam");
+			System.out.println("\nYou are not allowed to sit for exam");
 		else if(percentage >= 75)
-			System.out.println("You are allowed to sit exam");
+			System.out.println("\nYou are allowed to sit exam");
+		
+
+	}
+
+}
+
 		
